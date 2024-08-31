@@ -17,7 +17,7 @@ const INITIAL_DATA = {
   phone: "",
   reason: "",
   returnTrip: true,
-  location: "", // Fixed typo from 'loaction'
+  location: "",
   pickupDate: "",
   pickupTime: "09:00",
   destination: "",
