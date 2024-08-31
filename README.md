@@ -1,5 +1,7 @@
 # Coach Hire & Travel Company Website
 
+![Hero Image](https://raw.githubusercontent.com/nickf33/coach-hire-site/main/readmeImages/hero.png)
+
 ## Project Overview
 
 This repository contains the source code for a modern, responsive website designed for a small coach hire and travel company. The site is built using cutting-edge web technologies to provide a smooth, interactive user experience while maintaining excellent performance and SEO capabilities.
