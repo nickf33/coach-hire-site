@@ -10,7 +10,7 @@ This repository contains the source code for a modern, responsive website design
 
 - Responsive design suitable for various devices and screen sizes
 - Interactive navigation with animated components
-- Multi-step booking form for easy travel arrangements
+- Multi-step booking form with autocomplete places (Requires a google api key)
 - FAQ section for quick access to common queries
 - Showcases available vehicles and services
 
