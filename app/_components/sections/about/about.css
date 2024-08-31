@@ -1,0 +1,16 @@
+.custom-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr; /* 400px fixed + flexible */
+  max-width: var(
+    --max-custom
+  ); /* Assuming you have a custom max width defined */
+  width: 80%; /* Equivalent to w-4/5 in Tailwind */
+  margin: 0 auto; /* Centers the container */
+}
+
+@media (max-width: 768px) {
+  /* Example breakpoint for tablets */
+  .custom-grid {
+    grid-template-columns: 1fr; /* Switch to single column */
+  }
+}

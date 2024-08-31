@@ -15,14 +15,21 @@ export const backdropVariants: Variants = {
   },
 };
 
+export const fadeInVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+  },
+};
+
 export const fadeInUpVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
-      ease: "easeOut",
+      stiffness: 10,
+      damping: 10,
     },
   },
 };
@@ -32,9 +39,35 @@ export const staggerChildrenVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.25,
     },
   },
 };
 
+export const scaleUpVariants = {
+  rest: {
+    scale: 0.95,
+    y: 0,
+    transition: {
+      stiffness: 10,
+      damping: 10,
+    },
+  },
+  hover: {
+    scale: 1,
+    y: "-10%",
+    transition: {
+      stiffness: 10,
+      damping: 100,
+    },
+  },
+};
+
+export const scaleDownVariant = {
+  hidden: { scale: 0.75, opacity: 0 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+  },
+};
 // Add more reusable variants as needed

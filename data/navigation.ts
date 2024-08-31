@@ -23,6 +23,14 @@ export interface SocialLink {
   icon: IconType;
 }
 
+export interface AddressProps {
+  lineOne: string;
+  lineTwo: string;
+  lineThree: string;
+  lineFour: string;
+  postcode: string;
+}
+
 export const navLinks: NavLink[] = [
   { id: "home", link: "/", text: "Home", icon: IoHome },
   { id: "about", link: "#about", text: "About", icon: IoPeople },
@@ -47,6 +55,14 @@ export const socialLinks: SocialLink[] = [
   { link: "https://instagram.com", icon: FaInstagram },
   { link: "https://whatsapp.com", icon: FaWhatsapp },
 ];
+
+export const address: AddressProps = {
+  lineOne: "Main Street",
+  lineTwo: "Town Name",
+  lineThree: "County",
+  lineFour: "",
+  postcode: "BN17 7AR",
+};
 
 export const getNavLinkById = (id: string): NavLink | undefined => {
   return navLinks.find((link) => link.id === id);

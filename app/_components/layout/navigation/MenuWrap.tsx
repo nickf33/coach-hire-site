@@ -15,7 +15,7 @@ const MenuWrap = ({
   return (
     <div className="relative flex justify-end h-auto w-auto top-0 z-2">
       <AnimatedBurgerButton isOpen={isOpen} toggleMenu={toggleMenu} />
-      <FlyoutContainer isOpen={isOpen} />
+      <FlyoutContainer isOpen={isOpen} toggleMenu={toggleMenu} />
     </div>
   );
 };

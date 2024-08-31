@@ -21,7 +21,7 @@ module.exports = {
         primaryOp: "rgba(48, 48, 48, 0.4)",
       },
       maxWidth: {
-        custom: "1024px",
+        container: "1024px",
       },
       width: {
         "9/10": "90%",

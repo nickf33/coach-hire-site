@@ -1,5 +1,17 @@
-import Image from "next/image";
+import HeroWrap from "./_components/sections/hero/HeroWrap";
+import GridWrap from "./_components/sections/grid/GridWrap";
+import SliderWrap from "./_components/sections/slider/SliderWrap";
+import FAQWrap from "./_components/sections/faq/FAQWrap";
+import FooterWrap from "./_components/layout/footer/FooterWrap";
 
 export default function Home() {
-  return <div className="h-scren"></div>;
+  return (
+    <main className="h-screen">
+      <HeroWrap />
+      <GridWrap />
+      <SliderWrap />
+      <FAQWrap />
+      <FooterWrap />
+    </main>
+  );
 }

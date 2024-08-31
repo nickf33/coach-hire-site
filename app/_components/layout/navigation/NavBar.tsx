@@ -8,9 +8,8 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import MenuWrap from "./MenuWrap";
-import Link from "next/link";
-import { FaLocationDot } from "react-icons/fa6";
 import { backdropVariants } from "../../ui/AnimationVariants";
+import Logo from "../shared/Logo";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +41,7 @@ const NavBar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            tabIndex={0}
             variants={backdropVariants}
             initial="closed"
             animate="open"
@@ -60,7 +60,7 @@ const NavBar = () => {
         transition={{ duration: 0.35 }}
         className="fixed top-0 w-full pt-4 z-[999]"
       >
-        <nav className="relative max-w-[1080px] w-4/5 h-10 rounded-full bg-secondary mx-auto flex justify-between items-center px-6 shadow-lg mobile:h-12 z-[999]">
+        <nav className="relative max-w-[1080px] w-4/5 rounded-full bg-secondary mx-auto flex justify-between items-center px-6 shadow-lg h-12 z-[999]">
           <Logo />
           <MenuWrap isOpen={isOpen} toggleMenu={toggleMenu} />
         </nav>
@@ -68,14 +68,5 @@ const NavBar = () => {
     </>
   );
 };
-
-const Logo = () => (
-  <Link href="/" aria-label="Home">
-    <div className="flex items-center text-accent relative z-10 tablet:text-xl">
-      <FaLocationDot />
-      <p className="font-semibold text-white text-xs ml-2">Exeter Coach Hire</p>
-    </div>
-  </Link>
-);
 
 export default NavBar;

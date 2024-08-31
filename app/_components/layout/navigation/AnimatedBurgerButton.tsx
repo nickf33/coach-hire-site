@@ -3,13 +3,12 @@
 import React, { useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 
-const AnimatedBurgerBtn = ({
-  isOpen,
-  toggleMenu,
-}: {
+interface ButtonProps {
   isOpen: boolean;
   toggleMenu: () => void;
-}) => {
+}
+
+const AnimatedBurgerBtn = ({ isOpen, toggleMenu }: ButtonProps) => {
   return (
     <MotionConfig
       transition={{
@@ -21,21 +20,21 @@ const AnimatedBurgerBtn = ({
         initial={false}
         animate={isOpen ? "open" : "closed"}
         onClick={toggleMenu}
-        className="relative h-10 w-6 rounded-full"
+        className="relative h-12 w-8 rounded-full"
       >
         <motion.span
           variants={variants.top}
-          className="absolute h-0.5 w-6 bg-white rounded-full"
+          className="absolute h-0.5 w-8 bg-white rounded-full"
           style={{ y: "-50%", left: "50%", x: "-50%", top: "35%" }}
         />
         <motion.span
           variants={variants.middle}
-          className="absolute h-0.5 w-6 bg-white rounded-full"
+          className="absolute h-0.5 w-8 bg-white rounded-full"
           style={{ left: "50%", x: "-50%", top: "50%", y: "-50%" }}
         />
         <motion.span
           variants={variants.bottom}
-          className="absolute h-0.5 w-6 bg-white rounded-full"
+          className="absolute h-0.5 w-8 bg-white rounded-full"
           style={{
             x: "-50%",
             y: "50%",
