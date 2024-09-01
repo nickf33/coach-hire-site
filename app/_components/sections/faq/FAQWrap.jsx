@@ -22,7 +22,7 @@ const FAQWrap = () => {
   return (
     <section
       ref={faqRef}
-      id="faq"
+      id="faqs"
       tabIndex="0"
       className="relative mt-60 mb-60"
     >
