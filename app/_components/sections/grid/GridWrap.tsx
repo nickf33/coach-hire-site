@@ -45,6 +45,7 @@ const GridWrap = () => {
 
         {/* Small Left */}
         <motion.div
+          id="services"
           variants={fadeInUpVariants}
           className="md:col-span-3 md:row-span-3 md:col-start-5 md:row-start-4 sm:col-span-5 sm:row-span-2 sm:row-start-3 col-span-10 row-span-2 row-start-5"
         >
@@ -58,6 +59,7 @@ const GridWrap = () => {
 
         {/* Small Right */}
         <motion.div
+          id="vehicles"
           variants={fadeInUpVariants}
           className="md:col-span-3 md:row-span-3 md:col-start-8 md:row-start-4 sm:col-span-5 sm:row-span-2 sm:row-start-3 sm:col-start-6 col-span-10 row-span-2 row-start-3"
         >

@@ -33,10 +33,10 @@ export interface AddressProps {
 
 export const navLinks: NavLink[] = [
   { id: "home", link: "/", text: "Home", icon: IoHome },
-  { id: "about", link: "#about", text: "About", icon: IoPeople },
-  { id: "fleet", link: "#fleet", text: "Fleet", icon: FaBus },
+  { id: "vehicles", link: "#vehicles", text: "Vehicles", icon: IoPeople },
+  { id: "services", link: "#services", text: "Services", icon: FaBus },
   { id: "reviews", link: "#reviews", text: "Reviews", icon: MdOutlineReviews },
-  { id: "services", link: "#services", text: "Services", icon: IoMdApps },
+  { id: "faqs", link: "#faqs", text: "FAQs", icon: IoMdApps },
   { id: "booking", link: "#booking", text: "Booking", icon: FaCalendarAlt },
 ];
 
