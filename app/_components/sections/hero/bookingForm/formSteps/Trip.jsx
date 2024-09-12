@@ -81,7 +81,7 @@ const Trip = ({
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-8 w-full tablet:grid-cols-1">
+      <div className="grid sm:grid-cols-2 gap-8 w-full grid-cols-1">
         <div className="grid gap-5 w-full">
           {isLoaded && (
             <AutocompleteInput
