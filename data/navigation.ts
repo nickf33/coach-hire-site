@@ -54,18 +54,22 @@ export const socialLinks: SocialLink[] = [
   {
     link: "https://facebook.com",
     icon: FaFacebookF,
-    label: "facebook icon link",
+    label: "Visit our Facebook page",
   },
-  { link: "https://twitter.com", icon: FaTwitter, label: "twitter icon link" },
+  {
+    link: "https://twitter.com",
+    icon: FaTwitter,
+    label: "Follow us on Twitter",
+  },
   {
     link: "https://instagram.com",
     icon: FaInstagram,
-    label: "instagram icon link",
+    label: "Check out our Instagram",
   },
   {
     link: "https://whatsapp.com",
     icon: FaWhatsapp,
-    label: "whatsapp icon link",
+    label: "Contact us on WhatsApp",
   },
 ];
 
