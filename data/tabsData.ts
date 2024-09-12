@@ -123,7 +123,7 @@ export const servicesData: ModalData[] = [
 export const vehiclesData: ModalData[] = [
   {
     image: coach,
-    buttonTitle: "Book Standard Coach",
+    buttonTitle: "Standard Coach",
     displayTitle: "Standard Coach - 32 Seats",
     description:
       "The most popular option we offer, these vehicles are perfect for pretty much every occasion providing a no-fuss option for travel.",
@@ -138,7 +138,7 @@ export const vehiclesData: ModalData[] = [
   },
   {
     image: minibus,
-    buttonTitle: "Book Standard Minibus",
+    buttonTitle: "Standard Minibus",
     displayTitle: "Standard Minibus - 16 seats",
     description:
       "Economical, practical and has everything you could need. This vehicle is perfect for those who need to get from A to B, hassle-free.",
@@ -153,7 +153,7 @@ export const vehiclesData: ModalData[] = [
   },
   {
     image: luxuryMinibus,
-    buttonTitle: "Book Luxury Minibus",
+    buttonTitle: "Luxury Minibus",
     displayTitle: "Luxury Minibus - 12 seats",
     description:
       "Treat yourself to both comfort and luxury, these minibuses are ideal for travelling and arriving in style.",
