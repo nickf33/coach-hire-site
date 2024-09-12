@@ -17,6 +17,7 @@ const AnimatedBurgerBtn = ({ isOpen, toggleMenu }: ButtonProps) => {
       }}
     >
       <motion.button
+        aria-label="Toggle site menu"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         onClick={toggleMenu}

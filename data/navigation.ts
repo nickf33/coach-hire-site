@@ -21,6 +21,7 @@ export interface ContactLink {
 export interface SocialLink {
   link: string;
   icon: IconType;
+  label: string;
 }
 
 export interface AddressProps {
@@ -50,10 +51,22 @@ export const contactLinks: ContactLink[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { link: "https://facebook.com", icon: FaFacebookF },
-  { link: "https://twitter.com", icon: FaTwitter },
-  { link: "https://instagram.com", icon: FaInstagram },
-  { link: "https://whatsapp.com", icon: FaWhatsapp },
+  {
+    link: "https://facebook.com",
+    icon: FaFacebookF,
+    label: "facebook icon link",
+  },
+  { link: "https://twitter.com", icon: FaTwitter, label: "twitter icon link" },
+  {
+    link: "https://instagram.com",
+    icon: FaInstagram,
+    label: "instagram icon link",
+  },
+  {
+    link: "https://whatsapp.com",
+    icon: FaWhatsapp,
+    label: "whatsapp icon link",
+  },
 ];
 
 export const address: AddressProps = {

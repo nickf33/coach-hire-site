@@ -11,7 +11,7 @@ const SwiperButtons = () => {
     <>
       <div className="flex relative gap-5 justify-center items-center my-8 top-auto right-auto">
         <div
-          aria-label="button"
+          aria-label="back arrow"
           className={buttonStyles}
           onClick={() => swiper.slidePrev()}
         >
@@ -19,7 +19,7 @@ const SwiperButtons = () => {
         </div>
 
         <div
-          aria-label="button"
+          aria-label="forward arrow"
           className={buttonStyles}
           onClick={() => swiper.slideNext()}
         >

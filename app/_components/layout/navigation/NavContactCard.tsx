@@ -54,6 +54,7 @@ const SocialLinks = () => (
       {socialLinks.map((item: SocialLink, index: number) => (
         <MagneticWrap key={index}>
           <Link
+            aria-label={item.label}
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
