@@ -88,6 +88,7 @@ const Trip = ({
               isFocus={true}
               label="Pickup Details:"
               name="location"
+              placeholder=""
               value={location}
               onChange={(value) => updateFields({ location: value })}
               onLoad={setLocationAutocomplete}
@@ -120,6 +121,7 @@ const Trip = ({
               label="Dropoff Details:"
               name="destination"
               value={destination}
+              placeholder="Destination"
               onChange={(value) => updateFields({ destination: value })}
               onLoad={setDestinationAutocomplete}
               onPlaceChanged={onDestinationChanged}
