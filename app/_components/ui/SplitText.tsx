@@ -43,7 +43,10 @@ const SplitText = ({ children, classes = "" }: SplitTextProps) => {
     if (typeof child === "string") {
       return child.split(" ").map((word, wordIndex) => (
         <React.Fragment key={`${index}-${wordIndex}`}>
-          <motion.span variants={textVariant} className="inline-block">
+          <motion.span
+            variants={textVariant}
+            className="inline-block leading-7"
+          >
             {word}
           </motion.span>{" "}
         </React.Fragment>
