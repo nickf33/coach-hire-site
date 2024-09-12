@@ -10,21 +10,23 @@ const SwiperButtons = () => {
   return (
     <>
       <div className="flex relative gap-5 justify-center items-center my-8 top-auto right-auto">
-        <div
+        <button
+          type="button"
           aria-label="back arrow"
           className={buttonStyles}
           onClick={() => swiper.slidePrev()}
         >
           <IoMdArrowBack />
-        </div>
+        </button>
 
-        <div
+        <button
+          type="button"
           aria-label="forward arrow"
           className={buttonStyles}
           onClick={() => swiper.slideNext()}
         >
           <IoMdArrowForward />
-        </div>
+        </button>
       </div>
     </>
   );
