@@ -32,7 +32,7 @@ const ContactInfo = ({ hideText }: { hideText: boolean }) => (
     <div className="">
       <p className="title__md text-white mb-2">Speak with our team today!</p>
       <p
-        className={`para text-white max-w-[18rem] ${hideText ? "hidden" : ""}`}
+        className={`para__left text-white max-w-[18rem] ${hideText ? "hidden" : ""}`}
       >
         Prefer a personal touch? Reach out directly using the details below.
       </p>

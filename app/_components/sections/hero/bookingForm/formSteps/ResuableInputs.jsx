@@ -12,7 +12,7 @@ export const formStyles = {
   checkBox:
     "w-4 h-4 text-primary border-2 border-primary rounded checked:bg-accent checked:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-200",
   textarea:
-    "w-full h-full text-blue-dark bg-light border-2 border-blue-dark rounded shadow p-4 min-h-20 mt-0 focus:border-accent",
+    "w-full h-full text-blue-dark bg-light border-2 border-blue-dark rounded shadow p-4 sm:min-h-20 min-h-40 mt-0 focus:border-accent",
 };
 
 /**

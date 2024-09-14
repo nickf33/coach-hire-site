@@ -8,7 +8,7 @@
   }
 
   .title__lg {
-    @apply relative sm:text-3xl text-xl leading-5 tracking-wide font-bold;
+    @apply relative sm:text-3xl text-xl leading-5 tracking-wide font-bold sm:text-left text-center;
   }
 
   .title__md {
@@ -20,7 +20,11 @@
   }
 
   .para {
-    @apply text-sm text-primary leading-5 tracking-wide font-semibold;
+    @apply text-sm text-primary leading-5 tracking-wide sm:font-semibold font-normal sm:text-left text-center;
+  }
+
+  .para__left {
+    @apply text-sm text-primary leading-5 tracking-wide sm:font-semibold font-normal;
   }
 }
 
@@ -212,7 +216,9 @@ select:-webkit-autofill:focus {
   box-shadow: none !important;
 }
 .PhoneInputCountrySelect:focus {
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 /* Scrollbar Track */

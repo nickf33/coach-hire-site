@@ -21,7 +21,7 @@ const Additional = ({
       <div className="flex justify-between items-center">
         <StepHeading stepTitle="Additional Details" />
       </div>
-      <div className="flex gap-8 tablet:flex-col">
+      <div className="flex gap-8 flex-col">
         <div className="flex gap-8 flex-col sm:w-1/2 w-full">
           <SelectInput
             isFocus={true}

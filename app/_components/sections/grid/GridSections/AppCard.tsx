@@ -33,7 +33,7 @@ const AppCard = () => {
         <div className="relative w-full h-full z-10">
           <div className="relative m-6">
             <p className="title__md text-white">Get Our App</p>
-            <p className="para text-white mt-8 w-4/5 max-w-60">
+            <p className="para__left text-white mt-8 w-4/5 max-w-60">
               Download our web app for on the go use, and keep up to date with
               our latest news and offers.
             </p>

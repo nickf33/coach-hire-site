@@ -4,7 +4,6 @@ import { heroContent } from "@/data/content";
 import { motion } from "framer-motion";
 import backgroundImg from "@/app/_assets/images/city-map-bg.png";
 import Image from "next/image";
-import MagneticWrap from "../../ui/MagneticWrap";
 import SplitText from "../../ui/SplitText";
 import { FaLocationDot } from "react-icons/fa6";
 import { fadeInUpVariants, fadeInVariants } from "../../ui/AnimationVariants";
@@ -26,7 +25,7 @@ const HeroWrap = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, stiffness: 10, damping: 10 }}
-        className="relative top-[-35%] sm:w-4/5 w-9/10 mx-auto"
+        className="relative top-[-16rem] sm:w-4/5 w-9/10 mx-auto"
       >
         <BookingFormWrap />
       </motion.div>
@@ -107,7 +106,7 @@ const TextContainer = () => {
         initial="hidden"
         animate="visible"
         transition={{ delay: 0.8, stiffness: 10, damping: 10 }}
-        className="para max-w-[15rem] mt-6"
+        className="para text-center max-w-[15rem] mt-6"
       >
         {subHeading}
       </motion.p>
