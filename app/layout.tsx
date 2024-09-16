@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-MG233NFM" />
+      <GoogleTagManager gtmId="G-BM9V180KYZ" />
       <body className={poppins.className}>
         <NavBar />
         <main className="">
