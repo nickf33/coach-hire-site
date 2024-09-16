@@ -71,7 +71,7 @@ const Trip = ({
   return (
     <>
       <div className="relative flex justify-between items-center">
-        <StepHeading stepTitle="Your Details" />
+        <StepHeading stepTitle="About your tip" />
         <div className="inline-block absolute right-0 top-0">
           <CheckboxInput
             label="Return Trip?"

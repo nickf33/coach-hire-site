@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Inter, Poppins } from "next/font/google";
 import NavBar from "./_components/layout/navigation/NavBar";
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -24,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-XYZ" />
       <body className={poppins.className}>
         <NavBar />
         <main className="">
