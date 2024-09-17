@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Script from "next/script";
 import { Inter, Poppins } from "next/font/google";
 import NavBar from "./_components/layout/navigation/NavBar";
 import "./globals.css";
 import Analytics from "./_components/layout/Analytics";
 import CookieBanner from "./_components/layout/gdpr/CookieBanner";
+import Loading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -29,14 +31,16 @@ export default function RootLayout({
       <Analytics GA_MEASUREMENT_ID="G-BM9V180KYZ" />
       <body className={poppins.className}>
         <NavBar />
-        <main className="">
-          {children}
-          <CookieBanner />
-          <Script
-            src="https://code.tidio.co/irz5ndxkje14yaxlosvwdgkoel1jt9vu.js"
-            strategy="afterInteractive"
-          />
-        </main>
+        <Suspense fallback={<Loading />}>
+          <main className="">
+            {children}
+            <CookieBanner />
+            <Script
+              src="https://code.tidio.co/irz5ndxkje14yaxlosvwdgkoel1jt9vu.js"
+              strategy="afterInteractive"
+            />
+          </main>
+        </Suspense>
       </body>
     </html>
   );
