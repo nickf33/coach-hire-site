@@ -25,7 +25,7 @@ const HeroWrap = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, stiffness: 10, damping: 10 }}
-        className="relative top-[-16rem] sm:w-4/5 w-9/10 mx-auto"
+        className="relative top-[-16rem] md:w-4/5 w-9/10 mx-auto"
       >
         <BookingFormWrap />
       </motion.div>

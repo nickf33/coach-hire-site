@@ -3,8 +3,8 @@ import Script from "next/script";
 import { Inter, Poppins } from "next/font/google";
 import NavBar from "./_components/layout/navigation/NavBar";
 import "./globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
 import Analytics from "./_components/layout/Analytics";
+import CookieBanner from "./_components/layout/gdpr/CookieBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -26,12 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-BM9V180KYZ" />
       <Analytics GA_MEASUREMENT_ID="G-BM9V180KYZ" />
       <body className={poppins.className}>
         <NavBar />
         <main className="">
-          {children}{" "}
+          {children}
+          <CookieBanner />
           <Script
             src="https://code.tidio.co/irz5ndxkje14yaxlosvwdgkoel1jt9vu.js"
             strategy="afterInteractive"
